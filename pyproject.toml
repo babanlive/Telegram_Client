@@ -18,12 +18,12 @@ ruff = "^0.4.8"
 [tool.ruff]
 line-length = 120
 target-version = "py310"
-select = [
+lint.select = [
   "F",   # pyflakes
   "A",   # flake8-builtins
   "E",   # pycodestyle
   "W",   # pycodestyle
-  "N",   # pep8-naming
+  "N",   # pep8-naming  
   "UP",  # pyupgrade,
   "I",   # isort
   "B",   # flake8-bugbear
@@ -32,7 +32,7 @@ select = [
 
 fix = false
 show-fixes = true
-show-source = true
+output-format = "full"
 
 [tool.ruff.format]
 quote-style = "single"
